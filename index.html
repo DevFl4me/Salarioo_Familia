@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Pagina Inicial</title>
+</head>
+<body>
+    <main>
+        <header>
+            <!-- Logo da padigna -->
+            <div id="logo">
+                <img src="./images/salario-familia.jpg" alt="">
+            </div>
+        </header>
+        <!-- Campos de preenchimento -->
+        <section class="inputs">
+            <input placeholder="Empregado" type="text">
+            <input placeholder="Quantidade de filhos menores de 14 anos ou inválidos" type="number">
+            <input placeholder="Salário Contribuição" type="number"> 
+        </section>
+        <!-- Tabela Salário Família -->
+        <div id="table">
+            <table alt="tabela de contribuição salario familia">
+                <tr>
+                    <th alt="Salario contribuição">Salário-contribuição</th>
+                    <th alt="Cota do Salário Fámilia">Cota do Salário Fámilia</th>
+                </tr>
+                <tr>
+                    <td>até R$ 806,80</td>
+                    <td>R$ 41.37 por filho</td>
+                </tr>
+                <tr>
+                    <td>Entre R$ 806,81 e R$ 1.212,64</td>
+                    <td>R$ 29,161 por filho</td>
+                </tr>
+                <tr>
+                    <td>Mais de R$ 1.212,64</td>
+                    <td>Não há</td>
+                </tr>
+         </table>
+        </div>
+        <!-- Botão de calcular -->
+        <div id="button">
+        <button onclick="EnviaRelatorio" type="submit" alt="Botão para calcular beneficio">Calcular</button>
+        </div>
+    </main>
+</body>
+</html>
