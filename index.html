@@ -16,9 +16,9 @@
         </header>
         <!-- Campos de preenchimento -->
         <section class="inputs">
-            <input placeholder="Empregado" type="text">
-            <input placeholder="Quantidade de filhos menores de 14 anos ou inválidos" type="number">
-            <input placeholder="Salário Contribuição" type="number"> 
+            <input placeholder="Empregado" type="text" id="name">
+            <input placeholder="Quantidade de filhos" id="filhos"  type="number">
+            <input placeholder="Salário Contribuição" id="salario" type="number"> 
         </section>
         <!-- Tabela Salário Família -->
         <div id="table">
@@ -42,9 +42,12 @@
          </table>
         </div>
         <!-- Botão de calcular -->
-        <div id="button">
-        <button onclick="EnviaRelatorio" type="submit" alt="Botão para calcular beneficio">Calcular</button>
+        <div id="button" onclick="">
+        <button type="button" alt="Botão para calcular beneficio" onclick="getCalculo()" id="calculaBeneficio">Calcular</button>
         </div>
+        <!-- POP UP -->
+        <div id="resultado"></div>
     </main>
+    <script src="/script/script.js"></script>
 </body>
 </html>
